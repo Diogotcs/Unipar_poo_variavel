@@ -1,0 +1,12 @@
+class HelloWorld {
+    public static void main(String[] args) {
+    String nome;blade;
+    String sobrenome:airton;
+    float valor=3,00
+    int idade=18;
+    Integer ano=50;
+    double peso=60;
+    boolean confirma=false
+    char sexo= 'm';
+    long=99897;
+    short=7
