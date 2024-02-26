@@ -1,0 +1,122 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String nome;
+        String sobrenome;
+        Float valor =50f;
+        int idade =50;
+        double peso= 60.7;
+        char sexo= 'M';
+        Short = 5;
+        Boolean confrima= false;
+        Long = 999995;
+        Integer ano = 2003
+        
+    }
+
+
+
+Atividade 2
+class HelloWorld {
+    public static void main(String[
+1. nomeProduto
+2. precoProduto
+3. marcaDoProduto
+4. quantidadeProduto
+5. descricaoProduto
+6. nomeProduto
+7. numeroProduto
+8. precoDoProduto
+9. estoqueDisponivel
+10. totalDeProdutos] args) {
+        System.out.println("Hello, World!");
+    }
+}
+  
+
+
+
+Atividade 3
+class HelloWorld {
+    public static void main(String[- Nome do Aluno: [Declare uma variável para armazenar o nome do aluno]
+- Idade do Aluno: [int idadedoAluno]
+- Nota da Prova 1: [float valor=1.2f]
+- Nota da Prova 2: [float valor=2.2f]
+- Média Final: [float valor=2.2f= Medfinal]] args) {
+        System.out.println("Hello, World!");
+
+
+
+Atividade 4
+   public class ControleEstoque {
+    public static void mainString[String=Coca Cola
+    char=bebida
+    float=6,50f
+    int=100
+    ] args) {
+
+
+
+
+Atividade 5
+class HelloWorld {
+    public static void main(String[String= Aplle
+    Float=5.000f
+    int=100
+    String=Laptop
+    Float=6,000f
+    Int=50
+    String=MacBook
+    String=AirPods
+    Float=2,000f
+    int=60] args) {
+        System.out.println("Hello, World!");
+    }
+
+
+
+Atividade 6
+public class Main {
+    public static void main(String[] args) {
+       
+        int numeroProduto = "1p-0"; 
+        double precoProduto = 2,500; 
+        
+        String descricaoProduto;
+        
+        System.out.println("Descrição do Produto: " + descricaoProduto);
+        
+        descricaoProduto = "Fone de ouvido Bluetooth"
+        
+        System.out.println("AirPods:");
+        System.out.println("Número: " + 8;
+        System.out.println("Preço: $" + 2,500);
+        System.out.println("Descrição: " + Fone bluetto AirPods Aplle);
+
+
+
+Atividade 7
+public class ControleEstoque {
+    public static void main(String[] args) {
+     
+        String nomeProduto;
+        double precoProduto;
+        int quantidadeProduto;
+        
+        nomeProduto = 12345;
+        precoProduto = "29.99";
+        quantidadeProduto = "10";
+       
+        String marcaProduto;
+        marcaProduto = true;
+
+        String 1nomeProduto = "Fone de Ouvido";
+        double preçoProduto = 29,99;
+        
+        System.out.println("Dados do Produto":);
+        System.out.println("Nome: " + nomeProduto)
+        System.out.println("Marca: " + marcaProduto);
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Quantidade em estoque: " + quantidadeProduto);
+    }
+}
+}
