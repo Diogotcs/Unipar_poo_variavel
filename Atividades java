@@ -1,0 +1,176 @@
+# ATIVIDADE 03 - ENTRADA/PROCESSAMENTO/SAIDA
+
+1. Faça um sistema que peça 3 valores some os 3 e mostre o total;
+2. Faça um sistema que peça 2 valores e faça uma subtração.
+3. Faça um sistema que peça 2 notas para o usuario some as duas e divida por 2;
+4. Faça um sistema que peça 4 notas divida por 4;
+5. Faça um sistema que o usuario vai informar 2 numeros e o sistema deve retornar a soma, subtração, divisão e multiplicação dos dois numeros.
+6. Faça um sistema que pergunte para o usuario o nome, preço de produto, após isso pergunte qual o percentual de desconto, a saida precisa ser o nome do produto e o novo preço.
+
+
+
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroValor = 0;
+        int segundoValor = 0;
+        int terceiroValor = 0;
+        
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Informe o primeiro valor: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe o segundo valor: ");
+        segundoValor = scanner.nextInt();
+        
+        System.out.println("Informe o terceiro valor: ");
+        terceiroValor = scanner.nextInt();
+        
+        int total = primeiroValor + segundoValor + terceiroValor;
+        
+        System.out.println("o total e: " + total);
+
+
+
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroValor = 0;
+        int segundoValor = 0;
+    
+        
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Informe o primeiro valor: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe o segundo valor: ");
+        segundoValor = scanner.nextInt();
+        
+        int total = primeiroValor - segundoValor;
+        
+        System.out.println("o total e: " + total);
+        
+    }
+}
+
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroValor = 0;
+        int segundoValor = 0;
+    
+        
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Informe a primeira nota: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe a segunda nota: ");
+        segundoValor = scanner.nextInt();
+        
+        int total = primeiroValor + segundoValor;
+        int media = total / 2;
+        
+        System.out.println("o media total e: " + media);
+        
+    }
+}
+
+
+
+mport java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroValor = 0;
+        int segundoValor = 0;
+        int terceiroValor = 0;
+        int quartoValor = 0;
+    
+        
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Informe a primeira nota: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe a segunda nota: ");
+        segundoValor = scanner.nextInt();
+        
+        System.out.println("Informe a terceira nota: ");
+        terceiroValor = scanner.nextInt();
+        
+        System.out.println("Informe a quarta nota: ");
+        quartoValor = scanner.nextInt();
+        
+        int total = primeiroValor + segundoValor + terceiroValor + quartoValor;
+        int media = total / 4;
+
+
+
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroValor = 0;
+        int segundoValor = 0;
+    
+        
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Informe a primeira nota: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe a segunda nota: ");
+        segundoValor = scanner.nextInt();
+        
+        int soma = primeiroValor + segundoValor;
+        int subtracao = primeiroValor - segundoValor;
+        int divisao = primeiroValor / segundoValor;
+        int multiplicacao = primeiroValor * segundoValor;
+        
+        System.out.println("a soma total e: " + soma);
+        System.out.println("a subtracao total e: " + subtracao);
+        System.out.println("a divisao total e: " + divisao);
+        System.out.println("a multiplicacao total e: " + multiplicacao);
+        
+    }
+}
+
+
+
+
+import java.util.Scanner;
+
+class HelloWorld {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome do Usuario: ");
+        String nomeUsuario = scanner.nextLine();
+
+        System.out.print("Digite o preco do produto: R$ ");
+        double precoProduto = scanner.nextDouble();
+
+        System.out.print("Digite o percentual de desconto: ");
+        int descontoPercentual = scanner.nextInt();
+
+        double valorDesconto = precoProduto * descontoPercentual / 100;
+
+        double novoPreco = precoProduto - valorDesconto;
+
+        System.out.println("Usuario: " + nomeUsuario);
+        System.out.println("Desconto: " + descontoPercentual + "%");
+        System.out.println("Novo preco: R$ " + novoPreco);
+    }
+}
