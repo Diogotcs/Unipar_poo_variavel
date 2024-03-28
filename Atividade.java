@@ -1,20 +1,21 @@
+
 import java.util.Scanner;
 
 class HelloWorld {
     public static void main(String[] args) {
 
-        try (Scanner sc = new Scanner(System.in)) {
-            int idade = 18;
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println("Informe sua idade");
-            idade = sc.nextInt();
+        int Num = 0;
 
-            if( idade >= 18){
-                System.out.println("Voce é maior de idade");
-            }else{
-                System.out.println("Voce é menor de idade");
-            }
+        System.out.println("Informe um numero");
+        Num = sc.nextInt();
+
+        if( Num % 2 == 0){
+            System.out.println("Numero informado e par");
+        }else{
+            System.out.println("Numero informado e impar");
         }
 
     }
-}
+}       
