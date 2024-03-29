@@ -5,13 +5,17 @@ class EntradaProcessamentoSaida {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Atividades");
             atividadeUm(scanner);
+
             System.out.println("---------------");
+            atividadeDois(scanner);
+
+            System.out.println("---------------");            
             atividadequatro(scanner);
 
         } catch (Exception e) {
            System.err.println(e);
         }
-
+        
     }
 
     public static void atividadeUm(Scanner scanner) {
@@ -33,6 +37,22 @@ class EntradaProcessamentoSaida {
 
         System.out.println("o total e: " + total);
 
+    }
+
+    public static void atividadeDois(Scanner scanner) {
+        System.out.println("Segunda Atividade");
+        int primeiroValor = 0;
+        int segundoValor = 0;
+        
+        System.out.println("Informe o primeiro valor: ");
+        primeiroValor = scanner.nextInt();
+        
+        System.out.println("Informe o segundo valor: ");
+        segundoValor = scanner.nextInt();
+        
+        int total = primeiroValor - segundoValor;
+        
+        System.out.println("o total e: " + total);
     }
 
     public static void atividadequatro(Scanner scanner) {
