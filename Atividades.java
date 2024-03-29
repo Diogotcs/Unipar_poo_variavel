@@ -8,16 +8,19 @@ class EntradaProcessamentoSaida {
             atividadeUm(scanner);
 
             System.out.println("---------------");
-             atividadeDois(scanner);
+            atividadeDois(scanner);
 
             System.out.println("---------------");
-             atividadeTres(scanner);
+            atividadeTres(scanner);
 
             System.out.println("---------------");
-             atividadequatro(scanner);
+            atividadequatro(scanner);
 
             System.out.println("---------------");
-             atividadeCinco(scanner);
+            atividadeCinco(scanner);
+
+            System.out.println("---------------");
+            atividadeSeis(scanner);
 
         } catch (Exception e) {
             System.err.println(e);
@@ -64,8 +67,8 @@ class EntradaProcessamentoSaida {
 
     public static void atividadeTres(Scanner scanner) {
 
-        int primeiroValor = 0;
-        int segundoValor = 0;
+        double primeiroValor = 0;
+        double segundoValor = 0;
 
         System.out.println("Informe a primeira nota: ");
         primeiroValor = scanner.nextInt();
@@ -73,8 +76,8 @@ class EntradaProcessamentoSaida {
         System.out.println("Informe a segunda nota: ");
         segundoValor = scanner.nextInt();
 
-        int total = primeiroValor + segundoValor;
-        int media = total / 2;
+        double total = primeiroValor + segundoValor;
+        double media = total / 2;
 
         System.out.println("o media total e: " + media);
 
@@ -82,10 +85,10 @@ class EntradaProcessamentoSaida {
 
     public static void atividadequatro(Scanner scanner) {
         System.out.println("Quarta Atividade");
-        int primeiroValor = 0;
-        int segundoValor = 0;
-        int terceiroValor = 0;
-        int quartoValor = 0;
+        double primeiroValor = 0;
+        double segundoValor = 0;
+        double terceiroValor = 0;
+        double quartoValor = 0;
 
         System.out.println("informe a primeira nota:");
         primeiroValor = scanner.nextInt();
@@ -99,8 +102,8 @@ class EntradaProcessamentoSaida {
         System.out.println("informe a quarta nota:");
         quartoValor = scanner.nextInt();
 
-        int total = primeiroValor + segundoValor + terceiroValor + quartoValor;
-        int media = total / 4;
+        double total = primeiroValor + segundoValor + terceiroValor + quartoValor;
+        double media = total / 4;
 
         System.out.println("a media é " + media);
     }
@@ -125,5 +128,25 @@ class EntradaProcessamentoSaida {
         System.out.println("a subtracao total e: " + subtracao);
         System.out.println("a divisao total e: " + divisao);
         System.out.println("a multiplicacao total e: " + multiplicacao);
+    }
+
+    public static void atividadeSeis(Scanner scanner) {
+        System.out.print("Digite o nome do Usuario: ");
+        String nomeUsuario = scanner.nextLine();
+
+        System.out.print("Digite o preco do produto: R$ ");
+        double precoProduto = scanner.nextDouble();
+
+        System.out.print("Digite o percentual de desconto: ");
+        int descontoPercentual = scanner.nextInt();
+
+        double valorDesconto = precoProduto * descontoPercentual / 100;
+
+        double novoPreco = precoProduto - valorDesconto;
+
+        System.out.println("Usuario: " + nomeUsuario);
+        System.out.println("Desconto: " + descontoPercentual + "%");
+        System.out.println("Novo preco: R$ " + novoPreco);
+
     }
 }
