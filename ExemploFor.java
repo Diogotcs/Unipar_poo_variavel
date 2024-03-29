@@ -1,22 +1,20 @@
-package br.unipar.main;
 
 import java.util.Scanner;
 
-public class ExempleFor {
+class ExempleFor {
 
     public static void main(String[] args) {
 
         int numero = 0;
         int ateQuanto = 0;
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Informe um valor para multiplicar: ");
+            numero = scanner.nextInt();
 
-        System.out.println("Informe um valor para multiplicar: ");
-        numero = scanner.nextInt();
-
-        System.out.println("Até quanto deseja multiplicar? ");
-        ateQuanto = scanner.nextInt();
-
+            System.out.println("Até quanto deseja multiplicar? ");
+            ateQuanto = scanner.nextInt();
+        }
 
         //i++ é igual a i = i + 1
         //for(variavel; condição; incremento){}

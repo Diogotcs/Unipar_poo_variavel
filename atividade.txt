@@ -1,5 +1,4 @@
-class HelloWorld {
-    public static void main(String[] args) {
+Tipos das variáveis
     String nome;blade;
     String sobrenome:airton;
     float valor=3,00
