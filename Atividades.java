@@ -4,18 +4,21 @@ class EntradaProcessamentoSaida {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Atividades");
-            atividadeUm(scanner);
+             atividadeUm(scanner);
 
             System.out.println("---------------");
-            atividadeDois(scanner);
+             atividadeDois(scanner);
 
-            System.out.println("---------------");            
-            atividadequatro(scanner);
+            System.out.println("---------------");
+            atividadeTres(scanner);
+
+            System.out.println("---------------");
+             atividadequatro(scanner);
 
         } catch (Exception e) {
-           System.err.println(e);
+            System.err.println(e);
         }
-        
+
     }
 
     public static void atividadeUm(Scanner scanner) {
@@ -43,16 +46,34 @@ class EntradaProcessamentoSaida {
         System.out.println("Segunda Atividade");
         int primeiroValor = 0;
         int segundoValor = 0;
-        
+
         System.out.println("Informe o primeiro valor: ");
         primeiroValor = scanner.nextInt();
-        
+
         System.out.println("Informe o segundo valor: ");
         segundoValor = scanner.nextInt();
-        
+
         int total = primeiroValor - segundoValor;
-        
+
         System.out.println("o total e: " + total);
+    }
+
+    public static void atividadeTres(Scanner scanner) {
+
+        int primeiroValor = 0;
+        int segundoValor = 0;
+
+        System.out.println("Informe a primeira nota: ");
+        primeiroValor = scanner.nextInt();
+
+        System.out.println("Informe a segunda nota: ");
+        segundoValor = scanner.nextInt();
+
+        int total = primeiroValor + segundoValor;
+        int media = total / 2;
+
+        System.out.println("o media total e: " + media);
+
     }
 
     public static void atividadequatro(Scanner scanner) {
