@@ -1,3 +1,12 @@
+/*
+1. Faça um sistema que peça 3 valores some os 3 e mostre o total;
+2. Faça um sistema que peça 2 valores e faça uma subtração.
+3. Faça um sistema que peça 2 notas para o usuario some as duas e divida por 2;
+4. Faça um sistema que peça 4 notas divida por 4;
+5. Faça um sistema que o usuario vai informar 2 numeros e o sistema deve retornar a soma, subtração, divisão e multiplicação dos dois numeros.
+6. Faça um sistema que pergunte para o usuario o nome, preço de produto, após isso pergunte qual o percentual de desconto, a saida precisa ser o nome do produto e o novo preço.
+*/
+
 import java.util.Scanner;
 
 class EntradaProcessamentoSaida {
