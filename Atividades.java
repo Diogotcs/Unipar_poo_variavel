@@ -3,17 +3,21 @@ import java.util.Scanner;
 class EntradaProcessamentoSaida {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
+
             System.out.println("Atividades");
-             atividadeUm(scanner);
+            atividadeUm(scanner);
 
             System.out.println("---------------");
              atividadeDois(scanner);
 
             System.out.println("---------------");
-            atividadeTres(scanner);
+             atividadeTres(scanner);
 
             System.out.println("---------------");
              atividadequatro(scanner);
+
+            System.out.println("---------------");
+             atividadeCinco(scanner);
 
         } catch (Exception e) {
             System.err.println(e);
@@ -101,4 +105,25 @@ class EntradaProcessamentoSaida {
         System.out.println("a media é " + media);
     }
 
+    public static void atividadeCinco(Scanner scanner) {
+
+        double primeiroValor = 0;
+        double segundoValor = 0;
+
+        System.out.println("Informe a primeira nota: ");
+        primeiroValor = scanner.nextInt();
+
+        System.out.println("Informe a segunda nota: ");
+        segundoValor = scanner.nextInt();
+
+        double soma = primeiroValor + segundoValor;
+        double subtracao = primeiroValor - segundoValor;
+        double divisao = primeiroValor / segundoValor;
+        double multiplicacao = primeiroValor * segundoValor;
+
+        System.out.println("a soma total e: " + soma);
+        System.out.println("a subtracao total e: " + subtracao);
+        System.out.println("a divisao total e: " + divisao);
+        System.out.println("a multiplicacao total e: " + multiplicacao);
+    }
 }
