@@ -1,20 +1,25 @@
-//atividade 1
 import java.util.Scanner;
 
-class Atividade {
+class HelloWorld {
     public static void main(String[] args) {
-
-        try (Scanner sc = new Scanner(System.in)) {
-            int idade = 18;
-
-            System.out.println("Informe sua idade");
-            idade = sc.nextInt();
-
-            if( idade >=18){
-                System.out.println("Voce é maior de idade");
-            }else{
-                System.out.println("Voce é menor de idade");
-            }
-        }
+        
+        String nome = "";
+        int idade = 0;
+        double peso = 0.0;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Informe seus dados:  ");
+        idade = scanner.nextInt();
+        scanner.nextLine(); // Consumir a nova linha pendente
+        peso = scanner.nextDouble();
+        scanner.nextLine(); // Consumir a nova linha pendente
+        nome = scanner.nextLine();
+        
+        scanner.close();
+        
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
     }
 }
