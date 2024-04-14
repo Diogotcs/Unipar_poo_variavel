@@ -1,0 +1,526 @@
+ATIVIDADE REVISÃO
+ETAPA 1 - TEORICA
+1- O que é orientação a objetos e quais são seus princípios fundamentais?
+2-Quais são as vantagens da orientação a objetos em comparação com paradigmas de programação procedural?
+3- Explique o conceito de encapsulamento e como ele é implementado em linguagens de programação orientadas a objetos.
+4- Explique o conceito de classe e objeto em programação orientada a objetos, e como eles estão relacionados.
+5- Qual é a importância dos construtores e métodos em uma classe em programação orientada a objetos?
+6- Quais são as diferenças entre métodos estáticos e métodos de instância em uma classe?
+7- Como são tratados os conceitos de acoplamento e coesão na orientação a objetos e por que são importantes?
+8- Qual é o objetivo do metodo main ?
+9- Como ocorre a passagem de parâmetros em métodos de uma classe em programação orientada a objetos?
+10- Qual é a diferença entre os modificadores de acesso "public", "private" e "protected" em uma classe?
+11-Qual é a importância da palavra-chave "this" em programação orientada a objetos e como ela é utilizada?
+
+
+1.R=Orientação a objetos é um paradigma de programação que organiza o software em unidades chamadas objetos, que podem conter dados (atributos) e código (métodos) para manipular esses dados. Os princípios fundamentais da orientação a objetos são:
+Abstração: O processo de identificar as características essenciais de um objeto e ignorar as não essenciais. Isso permite representar objetos do mundo real no software de forma simplificada e focada nos aspectos relevantes para o sistema.
+Encapsulamento: É o conceito de ocultar os detalhes internos de como um objeto opera e fornecer uma interface clara e definida para interagir com ele. Isso promove a modularidade e a manutenção do código, pois os detalhes de implementação podem ser alterados sem afetar os outros componentes do sistema.
+Herança: Permite que um objeto herde características e comportamentos de outro objeto. Isso promove a reutilização de código e a organização hierárquica de classes, onde classes mais específicas podem estender ou especializar classes mais genéricas.
+Polimorfismo: Refere-se à capacidade de objetos de diferentes classes responderem ao mesmo método de forma diferente. Isso permite tratar objetos de classes diferentes de maneira uniforme, aumentando a flexibilidade e a extensibilidade do código.
+Esses princípios são fundamentais para o desenvolvimento de sistemas orientados a objetos e são amplamente utilizados em linguagens de programação como Java, Python, C++, entre outras.
+
+2.R= A orientação a objetos oferece várias vantagens em comparação com paradigmas de programação procedural. Algumas das principais vantagens incluem:
+Reutilização de código: Através da herança e da composição, os objetos podem ser projetados para serem reutilizados em diferentes partes do código, reduzindo a duplicação e promovendo a modularidade.
+Encapsulamento e modularidade: O encapsulamento permite que os detalhes internos de um objeto sejam ocultos, fornecendo uma interface clara e definida para interagir com ele. Isso promove a modularidade, facilitando a manutenção e a evolução do código ao isolar as partes do sistema.
+Abstração: A abstração permite modelar objetos do mundo real de forma simplificada, focando nos aspectos relevantes para o sistema. Isso torna o código mais compreensível e mais próximo do domínio do problema.
+Facilidade de manutenção: A organização do código em objetos permite uma manutenção mais fácil, pois as mudanças podem ser feitas em partes específicas do sistema sem afetar outras partes. Isso ocorre devido ao encapsulamento, que reduz as interdependências entre os diferentes componentes do sistema.
+Herança e polimorfismo: A herança permite a criação de hierarquias de classes, promovendo a reutilização e a extensibilidade do código. O polimorfismo permite tratar objetos de classes diferentes de maneira uniforme, aumentando a flexibilidade e a capacidade de adaptação do sistema.
+Desenvolvimento mais rápido: A reutilização de código, a modularidade e a abstração proporcionadas pela orientação a objetos podem levar a um desenvolvimento mais rápido e eficiente de software, especialmente em projetos de grande escala.
+Essas vantagens tornam a orientação a objetos uma abordagem poderosa e amplamente adotada no desenvolvimento de software moderno, especialmente em sistemas complexos e de longa duração.
+
+3R= O encapsulamento é um dos princípios fundamentais da programação orientada a objetos, que envolve ocultar os detalhes internos de um objeto e fornecer uma interface clara e definida para interagir com ele. Em outras palavras, encapsular um objeto significa proteger seu estado (atributos) e comportamento (métodos), permitindo o acesso controlado e seguro a esses elementos.
+Em linguagens de programação orientadas a objetos, o encapsulamento é implementado principalmente através do uso de modificadores de acesso, como public, private e protected. Aqui está uma explicação de como esses modificadores funcionam em relação aos membros de uma classe:
+Public: Os membros marcados como públicos são acessíveis de fora da classe. Isso significa que eles podem ser acessados e modificados por qualquer parte do código que tenha uma referência válida para o objeto. Os métodos públicos geralmente representam a interface pública da classe, através da qual outros objetos podem interagir com ela.
+Private: Os membros marcados como privados são acessíveis apenas dentro da própria classe. Isso significa que eles não podem ser acessados ou modificados diretamente por código externo à classe. O encapsulamento é alcançado ao ocultar os detalhes internos da implementação da classe e restringir o acesso direto a seus membros privados.
+Protected: Os membros marcados como protegidos são semelhantes aos membros privados, mas também podem ser acessados pelas subclasses da classe. Isso permite que as subclasses herdem e modifiquem o comportamento dos membros protegidos, mantendo o encapsulamento dos detalhes internos da classe.
+Além dos modificadores de acesso, os métodos de acesso (também conhecidos como getters e setters) também são comumente usados para permitir acesso controlado aos atributos privados de um objeto. Os getters são métodos públicos que retornam o valor de um atributo privado, enquanto os setters são métodos públicos que permitem modificar o valor de um atributo privado, geralmente realizando validações e garantindo a consistência dos dados.
+Em resumo, o encapsulamento em linguagens de programação orientadas a objetos é implementado através de modificadores de acesso e métodos de acesso, que ajudam a proteger o estado e o comportamento de um objeto, promovendo a modularidade, a segurança e a manutenibilidade do código.
+
+
+4.R= Na programação orientada a objetos (POO), uma classe é um modelo ou uma descrição abstrata que define um tipo de objeto. Ela especifica os atributos (variáveis) que os objetos desse tipo terão e os métodos (funções) que eles poderão executar. Em outras palavras, uma classe é como um plano de construção que define as características e o comportamento que os objetos desse tipo possuirão.
+Uma classe é uma abstração que define um tipo de objeto, enquanto um objeto é uma instância concreta dessa classe, com seus próprios valores para os atributos e capaz de executar os métodos definidos pela classe. As classes são usadas para definir o comportamento e a estrutura dos objetos em um sistema orientado a objetos.
+
+5.R= Os construtores são responsáveis pela inicialização dos objetos, enquanto os métodos definem o comportamento e a funcionalidade dos objetos. Juntos, eles ajudam a modelar os objetos em um sistema orientado a objetos, promovendo encapsulamento, reutilização de código e abstração de funcionalidades.
+
+6.R=  Os métodos de instância operam em instâncias específicas da classe e podem acessar atributos e métodos não estáticos da instância, enquanto os métodos estáticos operam na própria classe e não têm acesso direto aos atributos ou métodos de instância. O uso de cada tipo de método depende das necessidades específicas de funcionalidade e design da classe.
+
+7.R= Acoplamento e coesão são princípios fundamentais da engenharia de software orientada a objetos, que buscam garantir a qualidade, flexibilidade e manutenibilidade do código. Ao aplicar esses princípios, os desenvolvedores podem criar sistemas mais robustos, modulares e fáceis de evoluir.
+
+8.R= O método main serve como ponto de entrada e controle para a execução de um programa, iniciando suas operações, recebendo argumentos da linha de comando, gerenciando o fluxo de controle e determinando quando o programa deve ser encerrado.
+
+9.R= A passagem de parâmetros em métodos de uma classe em programação orientada a objetos ocorre de maneira semelhante à passagem de parâmetros em funções, com algumas distinções importantes devido à natureza dos métodos em uma classe e ao acesso aos membros da classe.
+
+10.R= A diferença entre os modificadores de acesso "public", "private" e "protected" reside na visibilidade e no acesso dos membros da classe para outras partes do código. "public" permite acesso de qualquer lugar, "private" limita o acesso à própria classe e "protected" permite acesso pela própria classe e suas subclasses. Esses modificadores são fundamentais para o encapsulamento e a segurança do código em programação orientada a objetos.
+
+
+11.R= A palavra-chave "this" é importante em programação orientada a objetos porque permite o acesso aos membros da própria classe, evita ambiguidades de escopo e torna o código mais claro e legível. Ela é utilizada para referenciar explicitamente o objeto atual em que o código está sendo executado.
+
+
+## ETAPA 2 - PRÁTICA
+
+1 - Você deve criar uma classe em Java para representar um carro. A classe deve conter atributos privados para armazenar a marca, o modelo, o ano e a cor do carro. Além disso, você deve implementar métodos públicos para acessar e modificar esses atributos, garantindo o encapsulamento da classe. Por fim, crie um método para exibir as informações do carro.
+
+Após criar a classe, crie objetos dessa classe e teste os métodos implementados, modificando e exibindo as informações dos carros criados.
+
+Lembre-se de utilizar o encapsulamento adequado para proteger os atributos da classe e garantir o acesso seguro aos mesmos através dos métodos públicos.
+
+2 - Desenvolva uma classe em Java para representar um objeto do tipo Produto. Essa classe deve possuir atributos privados para armazenar o nome, o preço e a quantidade em estoque do produto. Implemente métodos públicos para acessar e modificar esses atributos, garantindo o encapsulamento adequado da classe.
+
+Após criar a classe Produto, crie objetos dessa classe e teste os métodos implementados, modificando e exibindo as informações dos produtos criados.
+
+Certifique-se de utilizar o encapsulamento de forma correta, protegendo os atributos da classe e garantindo o acesso seguro a eles através dos métodos públicos disponibilizados.
+
+3 - Você deve implementar um programa em Java para gerenciar o estoque de uma loja. Para isso, crie uma classe **`Produto`** que representará os produtos disponíveis na loja. Esta classe deve possuir atributos privados para armazenar o nome, o preço e a quantidade em estoque do produto.
+
+Em seguida, implemente métodos públicos na classe **`Produto`** para acessar e modificar esses atributos, garantindo o encapsulamento adequado da classe.
+
+Após criar a classe **`Produto`**, desenvolva um programa principal que permita ao usuário realizar as seguintes operações:
+
+1. Adicionar um novo produto ao estoque, fornecendo o nome, o preço e a quantidade em estoque.
+2. Atualizar o preço ou a quantidade em estoque de um produto existente.
+3. Exibir os detalhes de um produto específico, incluindo seu nome, preço e quantidade em estoque.
+
+Certifique-se de utilizar o encapsulamento de forma correta na classe **`Produto`**, protegendo os atributos da classe e garantindo o acesso seguro a eles através dos métodos públicos disponibilizados.
+
+4 - **Exercício para Praticar Método Construtor em Java:**
+
+Você deve criar uma classe **`Circulo`** que representará um círculo geométrico. Essa classe deve conter os seguintes atributos privados:
+
+- Raio (do tipo double)
+- Cor (do tipo String)
+
+Implemente um método construtor na classe **`Circulo`** que aceite dois parâmetros: o raio e a cor do círculo. O método construtor deve inicializar os atributos correspondentes com os valores fornecidos como parâmetros.
+
+Após criar a classe **`Circulo`**, desenvolva um programa principal que permita ao usuário criar objetos dessa classe e exibir suas características.
+
+Certifique-se de que o método construtor está sendo utilizado corretamente para inicializar os objetos da classe **`Circulo`** com os valores fornecidos pelo usuário.
+
+Dica: Você pode incluir métodos adicionais na classe **`Circulo`** para calcular a área ou o perímetro do círculo, se desejar.
+
+5 - **Exercício para Praticar Múltiplos Construtores em Java:**
+
+Crie uma classe **`Produto`** que representará um produto em uma loja. Essa classe deve conter os seguintes atributos privados:
+
+- Nome (do tipo String)
+- Preço (do tipo double)
+- Quantidade em Estoque (do tipo int)
+
+Implemente múltiplos métodos construtores na classe **`Produto`** para permitir diferentes maneiras de inicializar um objeto **`Produto`**. Os métodos construtores devem ser os seguintes:
+
+1. Um construtor que aceita apenas o nome do produto e inicializa os demais atributos com valores padrão (preço = 0.0 e quantidade em estoque = 0).
+2. Um construtor que aceita o nome e o preço do produto, inicializando a quantidade em estoque com o valor padrão (0).
+3. Um construtor que aceita o nome, o preço e a quantidade em estoque do produto.
+
+Após criar a classe **`Produto`**, desenvolva um programa principal que permita ao usuário criar objetos dessa classe utilizando os diferentes construtores implementados e exibir as características dos produtos criados.
+
+Certifique-se de que os métodos construtores estão sendo utilizados corretamente para inicializar os objetos da classe **`Produto`** com os valores fornecidos pelo usuário.
+
+
+1.R=public class Carro {
+   
+    private String marca;
+    private String modelo;
+    private int ano;
+    private String cor;
+
+   
+    public Carro(String marca, String modelo, int ano, String cor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+    }
+
+  
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    
+    public void exibirInformacoes() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano: " + ano);
+        System.out.println("Cor: " + cor);
+    }
+
+    public static void main(String[] args) {
+    
+        Carro carro1 = new Carro("Toyota", "Corolla", 2020, "Prata");
+        Carro carro2 = new Carro("Ford", "Fiesta", 2018, "Preto");
+
+        
+        System.out.println("Informacoees do Carro 1:");
+        carro1.exibirInformacoes();
+        System.out.println();
+
+        System.out.println("Informacoes do Carro 2:");
+        carro2.exibirInformacoes();
+        System.out.println();
+
+        
+        carro1.setCor("Azul");
+        carro1.setAno(2021);
+
+
+        System.out.println("Informacoes atualizadas do Carro 1:");
+        carro1.exibirInformacoes();
+    }
+}
+
+
+2.R= public class Produto {
+    
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+    
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preco: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+
+    public static void main(String[] args) {
+        
+        Produto produto1 = new Produto("Camiseta", 29.99, 50);
+        Produto produto2 = new Produto("Calca Jeans", 79.99, 30);
+
+
+        System.out.println("Informacoes do Produto 1:");
+        produto1.exibirInformacoes();
+        System.out.println();
+
+        System.out.println("Informacoes do Produto 2:");
+        produto2.exibirInformacoes();
+        System.out.println();
+
+    
+        produto1.setPreco(35.99);
+        produto2.setQuantidadeEmEstoque(40);
+
+    
+        System.out.println("Informacoes atualizadas do Produto 1:");
+        produto1.exibirInformacoes();
+    }
+}
+
+3.R= import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Produto {
+    
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+    
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+        public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preco: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+
+    public static void main(String[] args) {
+        
+        Map<String, Produto> estoque = new HashMap<>();
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\nEscolha uma opcao:");
+            System.out.println("1. Adicionar novo produto");
+            System.out.println("2. Atualizar preco ou quantidade de um produto");
+            System.out.println("3. Exibir detalhes de um produto");
+            System.out.println("4. Sair");
+
+            int opcao = scanner.nextInt();
+            scanner.nextLine(); 
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("\nInforme o nome do produto:");
+                    String nomeProduto = scanner.nextLine();
+
+                    System.out.println("Informe o preco do produto:");
+                    double precoProduto = scanner.nextDouble();
+
+                    System.out.println("Informe a quantidade em estoque do produto:");
+                    int quantidadeProduto = scanner.nextInt();
+
+                    Produto novoProduto = new Produto(nomeProduto, precoProduto, quantidadeProduto);
+                    estoque.put(nomeProduto, novoProduto);
+                    System.out.println("Produto adicionado ao estoque.");
+                    break;
+
+                case 2:
+                    System.out.println("\nInforme o nome do produto que deseja atualizar:");
+                    String nomeProdutoAtualizar = scanner.nextLine();
+
+                    if (estoque.containsKey(nomeProdutoAtualizar)) {
+                        Produto produtoAtualizar = estoque.get(nomeProdutoAtualizar);
+
+                        System.out.println("Deseja atualizar o preco (1) ou a quantidade em estoque (2)?");
+                        int escolhaAtualizacao = scanner.nextInt();
+                        scanner.nextLine(); 
+
+                        if (escolhaAtualizacao == 1) {
+                            System.out.println("Informe o novo preco:");
+                            double novoPreco = scanner.nextDouble();
+                            produtoAtualizar.setPreco(novoPreco);
+                        } else if (escolhaAtualizacao == 2) {
+                            System.out.println("Informe a nova quantidade em estoque:");
+                            int novaQuantidade = scanner.nextInt();
+                            produtoAtualizar.setQuantidadeEmEstoque(novaQuantidade);
+                        } else {
+                            System.out.println("Opcao invalida.");
+                        }
+                    } else {
+                        System.out.println("Produto nao encontrado.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("\nInforme o nome do produto que deseja exibir:");
+                    String nomeProdutoExibir = scanner.nextLine();
+
+                    if (estoque.containsKey(nomeProdutoExibir)) {
+                        Produto produtoExibir = estoque.get(nomeProdutoExibir);
+                        produtoExibir.exibirInformacoes();
+                    } else {
+                        System.out.println("Produto nao encontrado.");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Encerrando o programa.");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Opcao invalida.");
+                    
+            }
+            
+        }
+        }
+            
+}
+
+4.R= import java.util.Scanner;
+
+public class Circulo {
+    // Atributos privados
+    private double raio;
+    private String cor;
+
+    // Construtor
+    public Circulo(double raio, String cor) {
+        this.raio = raio;
+        this.cor = cor;
+    }
+
+    // Métodos para acessar os atributos
+    public double getRaio() {
+        return raio;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    // Método para calcular a área do círculo
+    public double calcularArea() {
+        return Math.PI * Math.pow(raio, 2);
+    }
+
+    // Método para calcular o perímetro do círculo
+    public double calcularPerimetro() {
+        return 2 * Math.PI * raio;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Criando um novo círculo...");
+        System.out.println("Informe o raio do círculo:");
+        double raio = scanner.nextDouble();
+        scanner.nextLine(); // Consumir quebra de linha
+
+        System.out.println("Informe a cor do círculo:");
+        String cor = scanner.nextLine();
+
+        // Criando um objeto Circulo usando o construtor
+        Circulo circulo = new Circulo(raio, cor);
+
+        // Exibindo características do círculo
+        System.out.println("\nCaracterísticas do círculo criado:");
+        System.out.println("Raio: " + circulo.getRaio());
+        System.out.println("Cor: " + circulo.getCor());
+        System.out.println("Área: " + circulo.calcularArea());
+        System.out.println("Perímetro: " + circulo.calcularPerimetro());
+
+        scanner.close();
+    }
+}
+
+5.R= import java.util.Scanner;
+
+public class Produto {
+   
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+   
+    public Produto(String nome) {
+        this.nome = nome;
+        this.preco = 0.0;
+        this.quantidadeEmEstoque = 0;
+    }
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = 0;
+    }
+
+   
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+
+    
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preco: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Criando um novo produto...");
+        System.out.println("Informe o nome do produto:");
+        String nome = scanner.nextLine();
+
+        System.out.println("Informe o preco do produto:");
+        double preco = scanner.nextDouble();
+
+        System.out.println("Informe a quantidade em estoque do produto:");
+        int quantidadeEmEstoque = scanner.nextInt();
+
+        
+        Produto produto1 = new Produto(nome);
+        Produto produto2 = new Produto(nome, preco);
+        Produto produto3 = new Produto(nome, preco, quantidadeEmEstoque);
+
+        
+        System.out.println("\nCaracteristicas do produto 1:");
+        produto1.exibirInformacoes();
+        System.out.println();
+
+        System.out.println("Caracteristicas do produto 2:");
+        produto2.exibirInformacoes();
+        System.out.println();
+
+        System.out.println("Caracteristicas do produto 3:");
+        produto3.exibirInformacoes();
+
+        scanner.close();
+    }
+}
