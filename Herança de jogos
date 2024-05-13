@@ -1,0 +1,93 @@
+public class Jogador {
+    String nome;
+    int idade;
+    String posicao;
+
+    public Jogador(String nome, int idade, String posicao) {
+        this.nome = nome;
+        this.idade = idade;
+        this.posicao = posicao;
+    }
+
+    public void treinar() {
+        System.out.println(nome + " treinando.");
+    }
+
+    public void jogar() {
+        System.out.println(nome + " jogando.");
+    }
+}
+
+
+class Goleiro extends Jogador {
+    int reflexos;
+
+    public Goleiro(String nome, int idade, int reflexos) {
+        super(nome, idade, "Goleiro");
+        this.reflexos = reflexos;
+    }
+
+    public void defender() {
+        System.out.println(nome + " defender chute.");
+    }
+}
+
+class Defensor extends Jogador {
+    int desarmes;
+
+    public Defensor(String nome, int idade, int desarmes) {
+        super(nome, idade, "Defensor");
+        this.desarmes = desarmes;
+    }
+
+    public void interceptar() {
+        System.out.println(nome + " interceptar o passe.");
+    }
+}
+
+class MeioCampista extends Jogador {
+    int passes;
+
+    public MeioCampista(String nome, int idade, int passes) {
+        super(nome, idade, "Meio-Campista");
+        this.passes = passes;
+    }
+
+    public void criarJogadas() {
+        System.out.println(nome + " criando jogadas.");
+    }
+}
+
+class Atacante extends Jogador {
+    int finalizacao;
+
+    public Atacante(String nome, int idade, int finalizacao) {
+        super(nome, idade, "Atacante");
+        this.finalizacao = finalizacao;
+    }
+
+    public void marcarGol() {
+        System.out.println(nome + " marcar um gol.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Goleiro neuer = new Goleiro("Ter Stegen", 35, 95);
+        Defensor ramos = new Defensor("Paolo Maldini", 35, 90);
+        MeioCampista modric = new MeioCampista("Toni Kross", 36, 92);
+        Atacante messi = new Atacante("Romario", 37, 95);
+
+        stegen.treinar();
+        stegen.defender();
+
+        maldini.treinar();
+        maldini.interceptar();
+
+        kross.treinar();
+        kross.criarJogadas();
+
+        romario.treinar();
+        romario.marcarGol();
+    }
+}
