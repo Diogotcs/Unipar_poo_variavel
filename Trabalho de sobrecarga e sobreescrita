@@ -1,0 +1,166 @@
+SOBRECARGA
+A sobrecarga de métodos (Overland) é um conceito do polimorfismo que consiste basicamente em criar variações de um mesmo método, 
+a criação de dois ou mais métodos com nomes totalmente iguais em uma classe. 
+A Sobrecarga permite que se utilize o mesmo nome em mais de um método contanto que suas listas de argumentos sejam diferentes para que seja feita a separação deles.
+Ela não se limita apenas a métodos.
+
+public class SobrecargaMetodos {
+    
+    // Método para somar dois inteiros
+    public int somar(int a, int b) {
+        return a + b;
+    }
+    
+    // Método para somar três inteiros
+    public int somar(int a, int b, int c) {
+        return a + b + c;
+    }
+    
+    // Método para somar dois doubles
+    public double somar(double a, double b) {
+        return a + b;
+    }
+
+    // Método para concatenar duas strings
+    public String concatenar(String a, String b) {
+        return a + b;
+    }
+
+    // Método para concatenar três strings
+    public String concatenar(String a, String b, String c) {
+        return a + b + c;
+    }
+    
+    public static void main(String[] args) {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        
+        // Teste de métodos de soma
+        System.out.println("Soma de 2 + 3 = " + obj.somar(2, 3));
+        System.out.println("Soma de 2 + 3 + 4 = " + obj.somar(2, 3, 4));
+        System.out.println("Soma de 2.5 + 3.7 = " + obj.somar(2.5, 3.7));
+        
+        // Teste dos métodos de concatenação
+        System.out.println("Concatenação de 'Olá' e 'Mundo' = " + obj.concatenar("Olá", "Mundo"));
+        System.out.println("Concatenação de 'Hello', ' ' e 'World' = " + obj.concatenar("Hello", " ", "World"));
+    }
+}
+
+// TESTE
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class SobrecargaMetodosTest {
+
+    @Test
+    public void testSomarInt() {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        assertEquals(5, obj.somar(2, 3));
+    }
+
+    @Test
+    public void testSomarIntInt() {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        assertEquals(9, obj.somar(2, 3, 4));
+    }
+
+    @Test
+    public void testSomarDouble() {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        assertEquals(6.2, obj.somar(2.5, 3.7), 0.001);
+    }
+
+    @Test
+    public void testConcatenarString() {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        assertEquals("OláMundo", obj.concatenar("Olá", "Mundo"));
+    }
+
+    @Test
+    public void testConcatenarStringStringString() {
+        SobrecargaMetodos obj = new SobrecargaMetodos();
+        assertEquals("Hello World", obj.concatenar("Hello", " ", "World"));
+    }
+}
+
+
+SOBREESCRITA 
+
+A sobrescrita (override) está diretamente relacionada à orientação a objetos, mais especificamente com a herança.
+Com ela conseguimos especializar os métodos herdados das superclasses, alterando o seu comportamento nas subclasses por algo mais específico.
+A sobrescrita de métodos consiste basicamente em criar um método na classe filha contendo a mesma assinatura e mesmo tipo de retorno do método sobrescrito.
+Quando mencionado anteriormente que o método deve possuir a mesma assinatura, significa dizer que o método deve possuir o mesmo nome, a mesma quantidade e o mesmo tipo de parâmetros utilizado no método sobrescrito.
+Em relação ao seu retorno este pode ser um subtipo do tipo de retorno do método sobrescrito, por exemplo: se o método da superclasse retornar um List, é permitido que o novo método retorne um ArrayList ou qualquer outro List.
+No entanto o oposto não é permitido, gerando um erro de compilação.
+
+// Classe pai
+class Animal {
+    // O que será sobrescrito
+    public void fazerBarulho() {
+        System.out.println("O animal faz algum barulho.");
+    }
+}
+
+// Subclasse 1
+class Cachorro extends Animal {
+    // Sobrescrevendo fazerBarulho na subclasse Cachorro
+    @Override
+    public void fazerBarulho() {
+        System.out.println("O cachorro late.");
+    }
+}
+
+// Subclasse 2
+class Gato extends Animal {
+    // Sobrescrevendo fazerBarulho na subclasse Gato
+    @Override
+    public void fazerBarulho() {
+        System.out.println("O gato mia.");
+    }
+}
+
+public class TesteSobrescritaMetodos {
+    public static void main(String[] args) {
+        // Criando instâncias das subclasses
+        Cachorro cachorro = new Cachorro();
+        Gato gato = new Gato();
+        
+        // Chamando os fazerBarulho de cada instância
+        cachorro.fazerBarulho();
+        gato.fazerBarulho();
+    }
+}
+
+// TESTE 
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TesteSobrescritaMetodosTest {
+
+    @Test
+    public void testFazerBarulhoCachorro() {
+        Cachorro cachorro = new Cachorro();
+        assertEquals("O cachorro late.", getOutput(cachorro));
+    }
+
+    @Test
+    public void testFazerBarulhoGato() {
+        Gato gato = new Gato();
+        assertEquals("O gato mia.", getOutput(gato));
+    }
+
+    // Método auxiliar para capturar das saídas 
+    private String getOutput(Animal animal) {
+        // Captura a saída do System.out.println() usando um PrintStream temporário
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream printStream = new PrintStream(outputStream);
+        PrintStream originalOut = System.out;
+        System.setOut(printStream);
+        
+        // Chama o fazerBarulho()
+        animal.fazerBarulho();
+        
+        // Restaura o Systemout
+        System.out.flush();
+        System.setOut(originalOut);
